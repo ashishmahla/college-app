@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_margin="10dp"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_marginBottom="4dp"
+        android:textColor="#000"
+        android:text="Ashish Mahla : Pooja Sharma"
+        android:id="@+id/tv_ma_transaction"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:paddingStart="16dp"
+        android:layout_marginBottom="2dp"
+        android:text="ViewFullScreenImage"
+        android:id="@+id/tv_ma_transaction_type"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:paddingStart="16dp"
+        android:text="12/12/2017 19:20:30"
+        android:id="@+id/tv_ma_dateTimeStamp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>

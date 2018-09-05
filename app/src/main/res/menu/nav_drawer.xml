@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@drawable/ic_profile"
+            android:title="Profile" />
+
+        <item
+            android:id="@+id/nav_web_client"
+            android:icon="@drawable/ic_profile"
+            android:title="Web Client" />
+
+        <!--<item
+            android:id="@+id/nav_noties"
+            android:icon="@drawable/ic_noties"
+            android:title="Notifications" />
+
+        <item
+            android:id="@+id/nav_chats"
+            android:icon="@drawable/ic_chats"
+            android:title="Chats" />-->
+    </group>
+
+    <!-- student only -->
+    <group
+        android:id="@+id/nav_group_students"
+        android:visible="false">
+        <item
+            android:id="@+id/nav_project_reg"
+            android:icon="@drawable/ic_project"
+            android:title="Project Registration" />
+    </group>
+
+    <!-- teachers only -->
+    <group
+        android:id="@+id/nav_group_teachers"
+        android:visible="false">
+        <item
+            android:id="@+id/nav_projects_list"
+            android:icon="@drawable/ic_project_approved"
+            android:title="Projects List" />
+
+        <item
+            android:id="@+id/nav_user_profiles"
+            android:icon="@drawable/ic_profile"
+            android:title="All Users" />
+
+        <item
+            android:id="@+id/nav_send_noties"
+            android:icon="@drawable/ic_noties"
+            android:title="Send Notifications" />
+    </group>
+
+    <!-- admin only -->
+    <group
+        android:id="@+id/nav_group_admin"
+        android:visible="false" />
+
+    <item
+        android:id="@+id/nav_group_unofficial"
+        android:title="Extras (Contains Ad)"
+        android:visible="true">
+        <menu>
+            <item
+                android:id="@+id/nav_uo_notices"
+                android:icon="@drawable/ic_notice"
+                android:title="Notices"
+                android:visible="true" />
+            <item
+                android:id="@+id/nav_uo_syllabus"
+                android:icon="@drawable/ic_project"
+                android:title="Syllabus"
+                android:visible="false" />
+
+            <item
+                android:id="@+id/nav_uo_result_predict"
+                android:icon="@drawable/ic_result_predict"
+                android:title="Result Prediction"
+                android:visible="false" />
+
+            <item
+                android:id="@+id/nav_uo_rewards"
+                android:icon="@drawable/ic_rewards"
+                android:title="Perks and Berries"
+                android:visible="false" />
+        </menu>
+    </item>
+
+    <item
+        android:id="@+id/nav_group_developer"
+        android:title="Developer Access"
+        android:visible="false">
+        <menu>
+            <item
+                android:id="@+id/nav_audits"
+                android:icon="@drawable/ic_eye"
+                android:title="Audits Record"
+                android:visible="false" />
+
+            <item
+                android:id="@+id/nav_developer_settings"
+                android:icon="@drawable/ic_settings"
+                android:title="Dev Settings"
+                android:visible="false" />
+        </menu>
+    </item>
+
+    <!-- basics -->
+    <group
+        android:id="@+id/nav_group_basics"
+        android:title="">
+        <item
+            android:id="@+id/nav_settings"
+            android:icon="@drawable/ic_settings"
+            android:title="Settings" />
+
+        <item
+            android:id="@+id/nav_about"
+            android:icon="@drawable/ic_about"
+            android:title="About" />
+    </group>
+</menu>

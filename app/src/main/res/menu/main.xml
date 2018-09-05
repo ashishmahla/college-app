@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <!--item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:title="@string/action_settings"
+        app:showAsAction="never" /-->
+
+    <item
+        android:id="@+id/action_chat"
+        android:actionLayout="@layout/menu_layout_chats"
+        android:title="Notifications"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/action_bell"
+        android:actionLayout="@layout/noty_counter"
+        android:icon="@drawable/ic_noties"
+        android:title="Notifications"
+        app:showAsAction="always" />
+</menu>

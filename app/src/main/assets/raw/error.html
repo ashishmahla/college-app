@@ -1,0 +1,29 @@
+<html>
+    <body onload="loadErrorObject()">
+        <div>
+            <h3>Error</h3>
+        </div>
+        <br />
+        Error loading page :
+        <a
+                href=""
+                id="errorUrl"></a>
+        <br />
+        <br />
+        <br />
+        <div id="errorCode"></div>
+        <div id="errorDesc"></div>
+    </body>
+
+    <script type="text/javascript">
+        function loadErrorObject(){
+            document.getElementById("errorCode").innerHTML = Android.getErrorCode();
+
+            var link =document.getElementById("errorUrl");
+            link.innerHTML = Android.getErrorUrl();
+            link.setAttribute('href', Android.getErrorUrl());
+
+            document.getElementById("errorDesc").innerHTML = Android.getErrorDesc();
+        }
+    </script>
+</html>

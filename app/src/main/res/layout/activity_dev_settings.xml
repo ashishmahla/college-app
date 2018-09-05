@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.CardView
+            style="@style/_settings_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/_settings_group.legend"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Show In Navigation" />
+
+                <RelativeLayout
+                    style="@style/_setting_item"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        style="@style/_setting_item.name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Override Student Access"
+                        tools:ignore="HardcodedText" />
+
+                    <CheckBox
+                        android:id="@+id/cb_ds_studentAccess"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:checked="false" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    style="@style/_setting_item"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        style="@style/_setting_item.name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Override Teacher Access"
+                        tools:ignore="HardcodedText" />
+
+                    <CheckBox
+                        android:id="@+id/cb_ds_teacherAccess"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:checked="false" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    style="@style/_setting_item"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        style="@style/_setting_item.name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Audits"
+                        tools:ignore="HardcodedText" />
+
+                    <CheckBox
+                        android:id="@+id/cb_ds_showNavAudits"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:checked="false" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    style="@style/_setting_item"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            style="@style/_setting_item.name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Dev Settings" />
+
+                        <CheckBox
+                            android:id="@+id/cb_ds_showNavDevSettings"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:checked="true" />
+                    </RelativeLayout>
+
+                    <TextView
+                        style="@style/_setting_item.desc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Will be reset when developer mode is regained next time." />
+                </LinearLayout>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            style="@style/_settings_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                style="@style/_settings_group.wrapper"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/_settings_group.legend"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Chats" />
+
+                <RelativeLayout
+                    style="@style/_setting_item"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        style="@style/_setting_item.name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Show Receipts"
+                        tools:ignore="HardcodedText" />
+
+                    <CheckBox
+                        android:id="@+id/cb_ds_showReceipts"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:checked="false" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    style="@style/_setting_item"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/textView2"
+                            style="@style/_setting_item.name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Send Receipts" />
+
+                        <CheckBox
+                            android:id="@+id/cb_ds_sendReceipts"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBottom="@+id/textView2"
+                            android:layout_alignParentEnd="true"
+                            android:checked="true" />
+                    </RelativeLayout>
+
+                    <TextView
+                        style="@style/_setting_item.desc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="If unchecked, receipts will not be sent." />
+                </LinearLayout>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            style="@style/_settings_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                style="@style/_settings_group.wrapper"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/_settings_group.legend"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Images" />
+
+                <RelativeLayout
+                    style="@style/_setting_item"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        style="@style/_setting_item.name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Show Image Download Button" />
+
+                    <CheckBox
+                        android:id="@+id/cb_ds_showImgDownBtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:checked="false" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    style="@style/_setting_item"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        style="@style/_setting_item.name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Download Images on Long Press" />
+
+                    <CheckBox
+                        android:id="@+id/cb_ds_downImgOnLong"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:checked="false" />
+                </RelativeLayout>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            style="@style/_settings_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                style="@style/_settings_group.wrapper"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/_settings_group.legend"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Audits" />
+
+                <RelativeLayout
+                    style="@style/_setting_item"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        style="@style/_setting_item.name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Save Audit Trails" />
+
+                    <CheckBox
+                        android:id="@+id/cb_ds_saveAudits"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:checked="true" />
+                </RelativeLayout>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            style="@style/_settings_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                style="@style/_settings_group.wrapper"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/_settings_group.legend"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Ads" />
+
+                <LinearLayout
+                    style="@style/_setting_item"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/_setting_item.name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Ad Type" />
+
+                    <RadioGroup
+                        android:id="@+id/rg_ds_adType"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <RadioButton
+                            android:id="@+id/rb_ds_adTypeAds"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="false"
+                            android:text="Ads" />
+
+                        <RadioButton
+                            android:id="@+id/rb_ds_adTypeDevAds"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="false"
+                            android:text="Development Ads" />
+
+                        <RadioButton
+                            android:id="@+id/rb_ds_adTypeNoAds"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="false"
+                            android:text="No Ads" />
+                    </RadioGroup>
+                </LinearLayout>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+</ScrollView>

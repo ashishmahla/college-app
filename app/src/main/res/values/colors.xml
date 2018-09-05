@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#2448b8</color>
+    <color name="colorPrimaryDark">#0d47a1</color>
+    <color name="colorAccent">#ff4059</color>
+
+    <!-- colorPrimary">#3F51B5, #2448b8 ,#db4437(RED)   colorPrimaryDark">#303F9F, #0d47a1   colorAccent">#FF4081-->
+    <color name="message_received">#466ada</color>
+
+    <color name="color_nav_unofficial">#ffefef</color>
+
+    <color name="color_notice_title">#222</color>
+    <color name="color_notice_desc">#777</color>
+</resources>

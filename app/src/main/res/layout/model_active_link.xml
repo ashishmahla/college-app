@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="0.2dp"
+    app:contentPadding="14dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_mal_expiry_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/tv_mal_name"
+                android:layout_alignParentEnd="true"
+                android:layout_alignTop="@id/tv_mal_name"
+                android:textSize="12sp"
+                android:gravity="center_vertical"
+                android:text="01 Feb 2018"
+                android:textColor="#d50000"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/tv_mal_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:layout_toStartOf="@id/tv_mal_expiry_date"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:text="Project Registration"
+                android:textColor="#333"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_mal_url"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="http://bkbiet.ml/project_registration.php"
+            android:textColor="#0000d5"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv_mal_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:ellipsize="end"
+            android:maxLength="100"
+            android:minLines="2"
+            android:text="Project registration are open. Students are requested to submit their projects."
+            android:textColor="#666"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv_mal_author_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginTop="10dp"
+            android:ellipsize="end"
+            android:maxLength="100"
+            android:text="Ashish Mahla"
+            android:textColor="#444"
+            android:textSize="14sp"
+            android:visibility="gone" />
+    </LinearLayout>
+</android.support.v7.widget.CardView>

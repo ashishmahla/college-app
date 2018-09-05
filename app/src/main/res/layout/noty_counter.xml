@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?><!--<Button xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/noty_count"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/ic_noties"
+    android:gravity="center"
+    android:lines="1"
+    android:minHeight="32dp"
+    android:minWidth="32dp"
+    android:padding="2dp"
+    android:text="0"
+    android:textColor="@android:color/holo_red_light"
+    android:textSize="14sp" />-->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/bell_layout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="4dp"
+    android:minHeight="32dp"
+    android:minWidth="32dp"
+    android:padding="2dp">
+
+    <ImageView
+        android:id="@+id/iv_bell"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minHeight="32dp"
+        android:minWidth="32dp"
+        android:padding="3dp"
+        android:tint="#fbbb"
+        app:srcCompat="@drawable/ic_noties" />
+
+    <TextView
+        android:id="@+id/new_noty_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="2dp"
+        android:text="2"
+        android:textColor="#d50000"
+        android:textSize="12sp"
+        android:visibility="visible" />
+</RelativeLayout>

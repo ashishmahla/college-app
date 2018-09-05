@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        style="@style/_settings_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            style="@style/_settings_group.wrapper"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/_settings_group.legend"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Images" />
+
+            <LinearLayout
+                style="@style/_setting_item"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        style="@style/_setting_item.name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Load Images" />
+
+                    <CheckBox
+                        android:id="@+id/cb_ss_loadImg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:checked="false" />
+                </RelativeLayout>
+
+                <TextView
+                    style="@style/_setting_item.desc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="If unchecked images will not be loaded and shown. Default text image will be shown instead. (Saves Data)" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_ss_clearImgCache"
+                style="@style/_setting_item"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/_setting_item.name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Clear Image Cache" />
+
+                <TextView
+                    style="@style/_setting_item.desc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Images stored in cache are cleared. Images will freshly downloaded next time." />
+
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        style="@style/_settings_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            style="@style/_settings_group.wrapper"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/_settings_group.legend"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Miscellaneous" />
+
+            <LinearLayout
+                style="@style/_setting_item"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        style="@style/_setting_item.name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Notify for new Versions" />
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:checked="true" />
+                </RelativeLayout>
+
+                <TextView
+                    style="@style/_setting_item.desc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="If checked, shows SnackBar for new app versions when application started. (Only applicable to minor versions, major versions are mandatory.)" />
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        style="@style/_settings_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            style="@style/_settings_group.wrapper"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/_settings_group.legend"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Unofficial's Settings" />
+
+            <LinearLayout
+                android:id="@+id/ll_ss_clearSyllabusCache"
+                style="@style/_setting_item"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/_setting_item.name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Clear Saved Syllabus" />
+
+                <TextView
+                    style="@style/_setting_item.desc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Syllabus stored in SyllabusCache will be deleted. Will be freshly downloaded next time." />
+
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>

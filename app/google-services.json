@@ -1,0 +1,58 @@
+{
+  "project_info": {
+    "project_number": "136174766687",
+    "firebase_url": "https://bkbiet-ac-in.firebaseio.com",
+    "project_id": "bkbiet-ac-in",
+    "storage_bucket": "bkbiet-ac-in.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:136174766687:android:a095c7eab000780d",
+        "android_client_info": {
+          "package_name": "in.ac.bkbiet.bkbiet"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "136174766687-9eciqs3uodof8dofpan3v8fain72t6tk.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "in.ac.bkbiet.bkbiet",
+            "certificate_hash": "f6bd9feaa77821dfe46407ee209f29573b9c71d1"
+          }
+        },
+        {
+          "client_id": "136174766687-tbfoecdvujfi181fprhmud8j38jmer2q.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDh4hDlpDZBF-BFDaWfzChrOAiDuTOWL6Q"
+        },
+        {
+          "current_key": "AIzaSyCtA3ANBbZrVlGLRpOJkqN4Ne_IRkRMABo"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "136174766687-tbfoecdvujfi181fprhmud8j38jmer2q.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

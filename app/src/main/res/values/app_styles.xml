@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="_settings_group">
+        <item name="android:layout_margin">4dp</item>
+        <item name="contentPadding">2dp</item>
+        <item name="cardBackgroundColor">#fff</item>
+    </style>
+
+    <style name="_settings_group.legend">
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:layout_marginBottom">10dp</item>
+    </style>
+
+    <style name="_settings_group.wrapper">
+
+    </style>
+
+    <style name="_setting_item">
+        <item name="android:padding">4dp</item>
+    </style>
+
+    <style name="_setting_item.name">
+        <item name="android:textAlignment">center</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:textColor">#434</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="_setting_item.desc">
+        <item name="android:textColor">#999</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="_perk_legend">
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="android:padding">4dp</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+</resources>

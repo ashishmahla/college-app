@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/chats_layout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="4dp"
+    android:minHeight="32dp"
+    android:minWidth="32dp"
+    android:padding="2dp">
+
+    <ImageView
+        android:id="@+id/iv_chats"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="4dp"
+        android:minHeight="32dp"
+        android:minWidth="32dp"
+        android:padding="2dp"
+        android:tint="#fbbb"
+        app:srcCompat="@drawable/ic_chats" />
+
+    <!--<android.support.v7.widget.CardView
+        android:id="@+id/new_chat_indicator"
+        android:layout_width="4dp"
+        android:layout_height="4dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="6dp"
+        android:visibility="gone"
+        app:cardBackgroundColor="#d50000"
+        app:cardElevation="1dp" />-->
+
+    <TextView
+        android:id="@+id/new_chat_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="2dp"
+        android:textColor="#d50000"
+        android:textSize="12sp"
+        android:visibility="gone" />
+</RelativeLayout>

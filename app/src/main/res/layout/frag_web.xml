@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/card_fw_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            app:cardBackgroundColor="#eee"
+            app:cardCornerRadius="0dp"
+            app:cardElevation="1dp"
+            app:contentPadding="0dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/iv_fw_home"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="8dp"
+                    android:padding="8dp"
+                    app:srcCompat="@drawable/ic_home" />
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/card_fw_url_bar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:layout_toEndOf="@id/iv_fw_home"
+                    android:layout_toStartOf="@id/iv_fw_reload"
+                    app:cardElevation="2dp"
+                    app:contentPadding="6dp">
+
+                    <TextView
+                        android:id="@+id/tv_fw_url_bar"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:text="http://bkbiet.ml/index.php/login"
+                        android:textColor="#444"
+                        android:textSize="14sp" />
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignEnd="@id/card_fw_url_bar"
+                    android:layout_alignStart="@id/card_fw_url_bar"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    app:cardBackgroundColor="#0000"
+                    app:cardCornerRadius="0dp"
+                    app:cardElevation="2dp">
+
+                    <ImageView
+                        android:id="@+id/iv_fw_lol"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center_horizontal"
+                        android:alpha="0"
+                        app:srcCompat="@drawable/ic_tongue" />
+                </android.support.v7.widget.CardView>
+
+                <ImageView
+                    android:id="@+id/iv_fw_reload"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="8dp"
+                    android:padding="8dp"
+                    android:tint="#000"
+                    app:srcCompat="@drawable/ic_refresh" />
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <ProgressBar
+            android:id="@+id/pb_fw_progress"
+            style="@style/Base.Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/card_fw_bar"
+            android:layout_marginTop="-8dp"
+            android:indeterminate="false"
+            android:max="100"
+            android:progress="20"
+            android:visibility="visible" />
+
+        <WebView
+            android:id="@+id/wv_fw_web_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/card_fw_bar" />
+
+        <RelativeLayout
+            android:id="@+id/rl_fw_home_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignBottom="@id/wv_fw_web_view"
+            android:layout_alignTop="@id/wv_fw_web_view"
+            android:background="#fff">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_fw_active_links"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_fw_add_link"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:layout_marginEnd="30dp"
+        android:backgroundTint="#d50000"
+        android:tint="#fff"
+        app:layout_anchor="@id/wv_fw_web_view"
+        app:layout_anchorGravity="bottom|end"
+        app:srcCompat="@drawable/ic_add" />
+</android.support.design.widget.CoordinatorLayout>

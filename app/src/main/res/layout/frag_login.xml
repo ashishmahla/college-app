@@ -1,0 +1,92 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        tools:context="in.ac.bkbiet.bkbiet.activities.LoginSignUp">
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/iv_login"
+            android:layout_width="match_parent"
+            android:layout_height="280dp"
+            android:layout_alignParentTop="true"
+            android:background="@color/colorPrimary"
+            android:padding="40dp"
+            app:srcCompat="@drawable/ic_login" />
+
+        <android.support.v4.widget.ContentLoadingProgressBar
+            android:id="@+id/pb_login"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/iv_login"
+            android:layout_marginBottom="-8dp"
+            android:layout_marginTop="-4dp"
+            android:indeterminate="true"
+            android:visibility="gone" />
+
+        <android.support.v7.widget.LinearLayoutCompat
+            android:id="@+id/ll_form"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/iv_login"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical"
+            android:padding="40dp">
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/til_l_username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:errorEnabled="true">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/et_l_username"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Username / College Id"
+                    android:inputType="text"
+                    android:nextFocusLeft="@id/et_l_username"
+                    android:nextFocusUp="@id/et_l_username" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/til_l_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:errorEnabled="true"
+                app:passwordToggleDrawable="@drawable/ic_eye"
+                app:passwordToggleEnabled="true">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/et_l_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/password"
+                    android:inputType="textPassword" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/b_login"
+                style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/login"
+                android:textColor="@color/colorPrimary" />
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/b_guest_login"
+                style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Continue as guest"
+                android:textColor="@color/colorAccent" />
+        </android.support.v7.widget.LinearLayoutCompat>
+    </RelativeLayout>
+</ScrollView>

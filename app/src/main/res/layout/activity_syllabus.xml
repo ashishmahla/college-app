@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".unofficial.ActivitySyllabus">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/as_appBar"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:fitsSystemWindows="true"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/collapsingToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true"
+            app:contentScrim="@color/colorPrimary"
+            app:expandedTitleMarginEnd="64dp"
+            app:expandedTitleMarginStart="48dp"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed"
+            app:title="Mobile Computing">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:orientation="vertical"
+                android:padding="10dp"
+                app:layout_collapseMode="parallax"
+                app:layout_collapseParallaxMultiplier="0.4"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+                <TextView
+                    android:id="@+id/tv_as_heading"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingEnd="0dp"
+                    android:paddingStart="4dp"
+                    android:text="Loading..."
+                    android:textColor="#fff"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/tv_as_sub_heading"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingEnd="0dp"
+                    android:paddingStart="4dp"
+                    android:text="Requires internet connection."
+                    android:textColor="#ddd"
+                    android:textSize="14sp" />
+            </LinearLayout>
+        </android.support.design.widget.CollapsingToolbarLayout>
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_as_hybrid"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="100dp" />
+        </RelativeLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+    <RelativeLayout
+        android:id="@+id/rl_as_ad_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|bottom" />
+
+    <!--<android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_change_syllabus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:tint="#fff"
+        app:backgroundTint="#d50000"
+        app:fabSize="mini"
+        app:layout_anchor="@id/as_appBar"
+        app:layout_anchorGravity="bottom|end"
+        app:srcCompat="@drawable/ic_edit" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_save_syllabus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="70dp"
+        android:tint="#fff"
+        app:backgroundTint="#d50000"
+        app:fabSize="mini"
+        app:layout_anchor="@id/as_appBar"
+        app:layout_anchorGravity="bottom|end"
+        app:srcCompat="@drawable/ic_save" />-->
+</android.support.design.widget.CoordinatorLayout>

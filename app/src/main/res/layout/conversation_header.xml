@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/ac_conversation_header"
+    app:cardBackgroundColor="@color/colorPrimary"
+    app:cardCornerRadius="0dp"
+    app:cardElevation="10dp">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Dark"
+        app:theme="@style/ThemeOverlay.AppCompat.ActionBar">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/xch_x001"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="4dp"
+                android:innerRadius="0dp"
+                android:shape="rectangle"
+                android:thicknessRatio="1.9"
+                app:cardBackgroundColor="#ffff"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="0.5dp">
+
+                <ImageView
+                    android:id="@+id/iv_chat_dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:scaleType="centerCrop" />
+            </android.support.v7.widget.CardView>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="8dp"
+                android:layout_toEndOf="@+id/xch_x001"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_ch_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ashish Mahla"
+                    android:textColor="@android:color/white"
+                    android:textSize="20sp"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:id="@+id/tv_ch_subtitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="14ebkcs017"
+                    android:textColor="#9fff"
+                    android:textSize="12sp"
+                    android:textStyle="normal" />
+            </LinearLayout>
+
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+</android.support.v7.widget.CardView>

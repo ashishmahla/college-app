@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rl_mm_msg"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_marginBottom="0dp"
+    android:layout_marginEnd="50dp"
+    android:layout_marginStart="2dp"
+    android:layout_marginTop="2dp"
+    android:padding="3dp">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_mm_msgText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@color/message_received"
+        app:cardCornerRadius="4dp"
+        app:cardElevation="1dp">
+
+        <TextView
+            android:id="@+id/tv_mm_msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:maxLength="500"
+            android:padding="6dp"
+            android:text="The message will come here which is gonna be a lot larger than this textView can handle and at that time to avoid any bugs or not to discard any functionalities I would have to utilize my mind a lot which is gonna be so tiresome and annoying that I  would think about leaving this app in middle without finishing it. Damn."
+            android:textColor="#fff"
+            android:textIsSelectable="true"
+            android:textSize="16sp" />
+
+    </android.support.v7.widget.CardView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/card_mm_msgText">
+
+        <TextView
+            android:id="@+id/tv_mm_sentAt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="24dp"
+            android:gravity="start"
+            android:padding="1dp"
+            android:textColor="#999999"
+            android:textSize="12sp"
+            android:textStyle="italic"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/iv_mm_receipts"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="4dp"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="8dp"
+        android:layout_below="@id/card_mm_msgText" />
+</RelativeLayout>
