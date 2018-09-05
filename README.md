@@ -1,0 +1,1 @@
+It is an Android Application for BKBIET College project cell. Here, students can login/register, submit their project profile, check status, chat, view syllabus, etc. Teachers can view project submissions, approve or reject projects, send notifications to students, view student list and much more. 
